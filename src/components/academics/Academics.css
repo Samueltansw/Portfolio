@@ -1,0 +1,36 @@
+.container__academics {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__academics h2 {
+  margin-bottom: 2rem;
+}
+
+.container__academics .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__academics .top img {
+  width: 5rem;
+  margin: 1rem;
+}
+.container__academics ul {
+  list-style: disc;
+}
+
+.container__academics ul li {
+  margin-top: 1rem;
+}
+
+.container__academics ul ul {
+  list-style: circle;
+  padding-left: 2rem;
+}
+
+.container__academics ul ul li {
+  margin-top: 0.5rem;
+}

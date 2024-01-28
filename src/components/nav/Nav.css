@@ -1,0 +1,170 @@
+/* 
+  Design of navbar was inspired / modified from 
+  https://youtu.be/ArTVfdHOB-M?si=t1vOpmJkLNAXT2Ru
+*/
+
+:root {
+  /* height of nav */
+  --size: 70px;
+}
+
+.Nav {
+  width: max-content;
+  padding: 0 1.5rem;
+  height: var(--size);
+  position: fixed;
+  bottom: 2rem;
+  /* top: 3rem; */
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+  backdrop-filter: blur(15px);
+  z-index: 100;
+  /* left: -8rem;
+  top: 50%;
+  transform: translateY(-50%);
+  transform: rotate(90deg); */
+}
+
+.Nav ul {
+  display: flex;
+  width: calc(var(--size) * 7);
+}
+
+.Nav ul li {
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+  z-index: 1;
+}
+
+.Nav ul li a {
+  position: relative;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  color: var(--color-light);
+}
+
+.Nav ul li a .icon {
+  position: relative;
+  display: block;
+  margin-top: 1rem;
+  /* line-height: 75px; */
+  font-size: 1.5em;
+  transition: var(--transition-slow);
+}
+
+.Nav ul li:hover a .icon {
+  color: var(--color-white);
+}
+
+.Nav ul li.active a .icon {
+  transform: translateY(calc(var(--size) / -2));
+  color: var(--color-white);
+}
+
+.Nav ul li a .description {
+  position: absolute;
+  font-weight: 500;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  transition: var(--transition-slow);
+  opacity: 0;
+  transform: translateY(55px);
+}
+
+.Nav ul li.active a .description {
+  opacity: 1;
+  color: var(--color-white);
+  transform: translateY(40px);
+}
+
+.indicator {
+  position: absolute;
+  width: var(--size);
+  height: var(--size);
+  background: var(--color-primary);
+  top: -50%;
+  border-radius: 50%;
+  border: 6px solid var(--bg-primary);
+  transition: var(--transition-slow);
+  box-sizing: border-box;
+}
+
+.Nav ul li:nth-child(1).active ~ .indicator {
+  transform: translateX(calc(var(--size) * 0));
+}
+
+.Nav ul li:nth-child(2).active ~ .indicator {
+  transform: translateX(calc(var(--size) * 1));
+}
+
+.Nav ul li:nth-child(3).active ~ .indicator {
+  transform: translateX(calc(var(--size) * 2));
+}
+
+.Nav ul li:nth-child(4).active ~ .indicator {
+  transform: translateX(calc(var(--size) * 3));
+}
+
+.Nav ul li:nth-child(5).active ~ .indicator {
+  transform: translateX(calc(var(--size) * 4));
+}
+
+.Nav ul li:nth-child(6).active ~ .indicator {
+  transform: translateX(calc(var(--size) * 5));
+}
+
+.Nav ul li:nth-child(7).active ~ .indicator {
+  transform: translateX(calc(var(--size) * 6));
+}
+
+/* ================= Media Queries (Medium Devices) ============== */
+@media screen and (max-width: 1024px) {
+  :root {
+    --size: 65px;
+  }
+
+  .Nav {
+    padding: 0 1.2rem;
+  }
+  .Nav ul li a .icon {
+    font-size: 1.3em;
+  }
+  .Nav ul li a .description {
+    font-size: 0.65em;
+  }
+  .Nav ul li.active a .description {
+    transform: translateY(37px);
+  }
+}
+
+/* ================= Media Queries (Small Devices) ============== */
+@media screen and (max-width: 600px) {
+  :root {
+    --size: 45px;
+  }
+
+  .Nav {
+    padding: 0 0.8rem;
+  }
+  .Nav ul li a .icon {
+    margin-top: 0.7em;
+    font-size: 1em;
+  }
+  .Nav ul li a .description {
+    font-size: 0.55em;
+    transform: translateY(40px);
+  }
+  .Nav ul li.active a .description {
+    transform: translateY(25px);
+  }
+}

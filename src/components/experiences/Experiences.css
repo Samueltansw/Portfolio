@@ -1,0 +1,27 @@
+.container__experiences {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__experiences h2 {
+  margin-bottom: 2rem;
+}
+
+.container__experiences .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container__experiences .top img {
+  width: 5rem;
+  margin: 1rem;
+}
+.container__experiences ul {
+  list-style: disc;
+}
+
+.container__experiences ul li {
+  margin-top: 1rem;
+}

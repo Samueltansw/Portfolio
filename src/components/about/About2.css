@@ -1,0 +1,79 @@
+.container__about {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container__about h4 {
+  color: var(--color-light);
+}
+
+.swiper {
+  width: 100%;
+  height: 30rem;
+  border-radius: 3rem;
+}
+
+.learner {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: justify;
+  padding: 2rem;
+}
+
+.learner div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.learner div p {
+  margin: auto 0;
+}
+
+.swiper-slide {
+  text-align: justify;
+  background: var(--bg-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  flex-direction: column;
+  padding: 0 4rem;
+}
+
+.swiper-slide h2 {
+  width: max-content;
+  border-bottom: 2px solid var(--color-light);
+}
+
+.swiper-slide div {
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: 1fr 1fr;
+  border: 2px solid red;
+  /* margin: 3rem 0; */
+}
+
+.learner div img {
+  height: 300px;
+  margin: auto 0;
+}
+
+.fitness div img {
+  display: block;
+  margin: auto 0;
+  width: 100%;
+}
+
+.swiper div p {
+  margin: auto 0;
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,115 @@
+.projects__container {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projects-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.project-content {
+  margin: 1rem;
+  background-color: var(--bg-secondary);
+  border-radius: 3rem;
+  width: 46%;
+  transition: var(--transition-slow);
+  position: relative;
+}
+
+.project-content img {
+  padding: 2rem;
+}
+
+.project-content-body {
+  border-top: 2px solid var(--color-white);
+  padding: 2rem;
+  padding-bottom: 4.5rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* position: relative; */
+}
+
+.project-content-body div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-content-body p {
+  margin-top: 1rem;
+  /* margin: auto 0; */
+  color: var(--color-light);
+}
+
+.project-content-body footer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--bg-tertiary);
+  width: max-content;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  margin: 1rem 0;
+}
+
+.project-content-body a {
+  display: block;
+  width: 90%;
+  background-color: var(--color-primary);
+  text-align: center;
+  padding: 0.5rem 0;
+  border-radius: 4rem;
+  color: var(--color-white);
+  border: 2px solid transparent;
+  transition: var(--transition-fast);
+  font-size: 1.1rem;
+  position: absolute;
+  bottom: 0.5rem;
+}
+
+.project-content-body a:hover {
+  color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  background-color: var(--bg-primary);
+}
+
+.project-content-body footer article {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid red; */
+  width: max-content;
+  position: relative;
+  align-items: center;
+}
+
+.project-content-body footer article div {
+  font-size: 2rem;
+  color: var(--color-white);
+  /* cursor: pointer; */
+}
+
+.project-content-body footer article span {
+  position: absolute;
+  bottom: -2.5rem;
+  color: var(--color-light);
+  opacity: 0;
+  transition: var(--transition-fast);
+}
+
+.project-content-body footer article div:hover + span {
+  opacity: 1;
+}
+
+@media screen and (max-width: 850px) {
+  .project-content {
+    width: 100%;
+  }
+}
