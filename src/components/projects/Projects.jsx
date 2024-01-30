@@ -26,14 +26,14 @@ const Projects = () => {
                 perform CRUD operations on income and expense, sorting of
                 expenses based on categores, and with local storage upon exit.
               </p>
-              <footer>
+              <div className="tech-stack-icons">
                 <article>
                   <div>
                     <FaJava />
                   </div>
                   <span>Java</span>
                 </article>
-              </footer>
+              </div>
               <LinkButton
                 text="Github"
                 url="https://github.com/Samueltansw/tp"
@@ -52,7 +52,7 @@ const Projects = () => {
                 some of the faults, it was overall a fun and interesting little
                 project.
               </p>
-              <footer>
+              <div className="tech-stack-icons">
                 <article>
                   <div>
                     <RiReactjsLine />
@@ -77,10 +77,10 @@ const Projects = () => {
                   </div>
                   <span>Javascript</span>
                 </article>
-              </footer>
+              </div>
               <LinkButton
                 text="Github"
-                url="https://github.com/Samueltansw/tp"
+                url="https://github.com/Samueltansw/Portfolio"
               />
             </div>
           </div>
@@ -96,7 +96,7 @@ const Projects = () => {
                 some of the faults, it was overall a fun and interesting little
                 project.
               </p>
-              <footer>
+              <div className="tech-stack-icons">
                 <article>
                   <div>
                     <FaJava />
@@ -109,7 +109,7 @@ const Projects = () => {
                   </div>
                   <span>Java</span>
                 </article>
-              </footer>
+              </div>
               <LinkButton
                 text="Github"
                 url="https://github.com/Samueltansw/tp"
@@ -132,7 +132,7 @@ const Projects = () => {
                 expedita amet deleniti vitae. Quidem sit labore aspernatur,
                 numquam provident maiores a?
               </p>
-              <footer>
+              <div className="tech-stack-icons">
                 <article>
                   <div>
                     <FaJava />
@@ -145,7 +145,7 @@ const Projects = () => {
                   </div>
                   <span>Java</span>
                 </article>
-              </footer>
+              </div>
               <LinkButton
                 text="Github"
                 url="https://github.com/Samueltansw/tp"
