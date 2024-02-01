@@ -47,7 +47,7 @@ const Academics = () => {
             </li>
 
             <li>Expected Date of Graduation: July 2025</li>
-            <li>Cumuative Average Point: 4.44 / 5.0</li>
+            <li>Cumuative Average Point: 4.43 / 5.0</li>
             <li>
               Relevant Course work:
               <ul>
