@@ -1,6 +1,21 @@
 import "./Projects.css";
 import Brokeman from "../../assets/brokeman.png";
 import PersonalWebsite from "../../assets/personal-website.png";
+import { Swiper, SwiperSlide } from "swiper/react";
+import PersonalWebsiteAbout from "../../assets/personal-website-aboutMe.png";
+import PersonalWebsiteAcademics from "../../assets/personal-website-academics.png";
+import PersonalWebsiteExperiences from "../../assets/personal-website-experiences.png";
+import PersonalWebsiteProjects from "../../assets/personal-website-myProjects.png";
+import PersonalWebsiteSkills from "../../assets/personal-website-skills.png";
+
+// Import Swiper styles
+// import "swiper/css";
+// import "swiper/css/pagination";
+// import "swiper/css/navigation";
+// import "swiper/swiper-element-bundle.min.mjs";
+
+// import required modules
+import { Pagination, Navigation } from "swiper/modules";
 
 import BrokemanArchitecture from "../../assets/brokeman-architecture.png";
 import { FaJava } from "react-icons/fa6";
@@ -13,11 +28,29 @@ import LinkButton from "./LinkButton";
 const Projects = () => {
   return (
     <section id="projects" className="container projects__container">
-      <h4>TAKE A LOOK</h4>
+      <h4>TAKE A LOOK AT</h4>
       <h2>MY PROJECTS</h2>
       <div className="projects-content">
         <div className="project-content">
-          <img src={Brokeman} alt="" />
+          {/* <img src={Brokeman} alt="" /> */}
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={Brokeman} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={BrokemanArchitecture} alt="" />
+            </SwiperSlide>
+          </Swiper>
           <div className="project-content-body">
             <h3>CLI Budget Manager School Project</h3>
             <div>
@@ -42,7 +75,37 @@ const Projects = () => {
           </div>
         </div>
         <div className="project-content">
-          <img src={PersonalWebsite} alt="" />
+          {/* <img src={PersonalWebsite} alt="" /> */}
+          <Swiper
+            slidesPerView={1}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true
+            }}
+            navigation={true}
+            modules={[Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <img src={PersonalWebsite} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={PersonalWebsiteAbout} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={PersonalWebsiteExperiences} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={PersonalWebsiteProjects} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={PersonalWebsiteAcademics} alt="" />
+            </SwiperSlide>
+            <SwiperSlide>
+              <img src={PersonalWebsiteSkills} alt="" />
+            </SwiperSlide>
+          </Swiper>
           <div className="project-content-body">
             <h3>Personal Website</h3>
             <div>
@@ -85,7 +148,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="project-content">
+        {/* <div className="project-content">
           <img src={PersonalWebsite} alt="" />
           <div className="project-content-body">
             <h3>Personal Website</h3>
@@ -118,7 +181,7 @@ const Projects = () => {
           </div>
         </div>
         <div className="project-content">
-          <img src={Brokeman} alt="" />
+          <img src={BrokemanArchitecture} alt="" />
           <div className="project-content-body">
             <h3>CLI Budget Manager School Project</h3>
             <div>
@@ -152,7 +215,7 @@ const Projects = () => {
               />
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
