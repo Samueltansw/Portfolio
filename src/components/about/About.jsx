@@ -8,7 +8,7 @@ import "swiper/css/navigation";
 
 import "./About.css";
 import FL from "../../assets/fl.jpg";
-import ME from "../../assets/me3.jpg";
+import ME from "../../assets/myImage2.jpg";
 
 // import required modules
 import { Pagination, Navigation } from "swiper/modules";
